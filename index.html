@@ -39,6 +39,8 @@
         #main>article {
             flex: 3 1 60%;
             order: 2;
+            display:flex;
+            flex-direction: column;
         }
 
         #main>aside {
@@ -62,10 +64,18 @@
         #main>article,
         #main>aside,
         #main>nav,
-        footer {
+        footer,
+        .box_header,.box,.box_input,.box_footer {
             border: 1px solid #666; 
             padding: .2em;
             margin: .1em;
+        }
+
+        .box {
+            flex:1;
+        }
+        .box_input{
+            flex:1;
         }
     </style>
 </head>
@@ -73,7 +83,12 @@
 <body>
     <header>header</header>
     <div id="main">
-        <article>article</article>
+        <article>article
+                <div class="box_header">box header</div>
+            <div class="box">box</div>
+            <div class="box_input">box input</div>
+            <div class="box_footer">box footer</div>
+        </article>
         <nav>nav</nav>
         <aside>aside</aside>
     </div>
