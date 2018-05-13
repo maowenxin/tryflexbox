@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html{
+            height:100%;
+
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            display:flex;
+            flex-direction: column;
+            margin:0px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        #main {
+            display: flex;
+            flex:1;
+        }
+
+        #main>nav {
+            flex: 1 6 23%;
+            order: 1;
+        }
+
+        #main>article {
+            flex: 3 1 60%;
+            order: 2;
+        }
+
+        #main>aside {
+            flex: 1 6 23%;
+            order: 3;
+            display:none;
+        }
+
+        footer {
+            text-align: center;
+            /* display: none; */
+            /* flex:none; */
+        }
+
+        header,
+        footer {
+            display: block;
+        }
+
+        header,
+        #main>article,
+        #main>aside,
+        #main>nav,
+        footer {
+            border: 1px solid #666; 
+            padding: .2em;
+            margin: .1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>header</header>
+    <div id="main">
+        <article>article</article>
+        <nav>nav</nav>
+        <aside>aside</aside>
+    </div>
+    <footer>footer</footer>
+</body>
+
+</html>
