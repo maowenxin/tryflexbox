@@ -10,16 +10,18 @@
         * {
             box-sizing: border-box;
         }
-        html{
-            height:100%;
+
+        html {
+            height: 100%;
 
         }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             height: 100%;
-            display:flex;
+            display: flex;
             flex-direction: column;
-            margin:0px;
+            margin: 0px;
         }
 
         header {
@@ -28,7 +30,7 @@
 
         #main {
             display: flex;
-            flex:1;
+            flex: 1;
         }
 
         #main>nav {
@@ -39,14 +41,14 @@
         #main>article {
             flex: 3 1 60%;
             order: 2;
-            display:flex;
+            display: flex;
             flex-direction: column;
         }
 
         #main>aside {
             flex: 1 6 23%;
             order: 3;
-            display:none;
+            display: none;
         }
 
         footer {
@@ -65,17 +67,44 @@
         #main>aside,
         #main>nav,
         footer,
-        .box_header,.box,.box_input,.box_footer {
-            border: 1px solid #666; 
+        .box_header,
+        .box,
+        .box_display,
+        .box_input,
+        .box_footer {
+            border: 1px solid #666;
             padding: .2em;
             margin: .1em;
         }
 
         .box {
-            flex:1;
+            /* flex:1; */
+            height:400px;
         }
-        .box_input{
-            flex:1;
+        .box_display {
+            /* flex:1; */
+            height:300px;
+        }
+        .box_input {
+            flex: 1;
+        }
+
+        .some_container {
+            flex: 1;
+            position: relative;
+        }
+        .box_input {
+            height: 100px;
+        }
+        .box_input {
+            height: 60px;
+            overflow: scroll;
+        }
+
+        .box_footer {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
         }
     </style>
 </head>
@@ -84,10 +113,18 @@
     <header>header</header>
     <div id="main">
         <article>article
-                <div class="box_header">box header</div>
+            <div class="box_header">box header</div>
             <div class="box">box</div>
-            <div class="box_input">box input</div>
-            <div class="box_footer">box footer</div>
+            <div class="some_container">
+                <div class="box_display">box display</div>
+                <div class="box_input">box input
+                    <div class="box_input_content">1</div>
+                    <div class="box_input_content">2</div>
+                    <div class="box_input_content">3</div>
+                    <div class="box_input_content">4</div>
+                </div>
+                <div class="box_footer">box footer</div>
+            </div>
         </article>
         <nav>nav</nav>
         <aside>aside</aside>
