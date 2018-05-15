@@ -45,11 +45,7 @@
             flex-direction: column;
         }
 
-        #main>aside {
-            flex: 1 6 23%;
-            order: 3;
-            display: none;
-        }
+
 
         footer {
             text-align: center;
@@ -69,21 +65,25 @@
         footer,
         .box_header,
         .box,
-        .box_display,
+        .box_image,
         .box_input,
         .box_footer {
             border: 1px solid #666;
             padding: .2em;
             margin: .1em;
         }
-
+        #main>aside {
+            flex: 1 6 23%;
+            order: 3;
+            display: none;
+        }
         .box {
             /* flex:1; */
-            height:400px;
+            height:200px;
         }
-        .box_display {
+        .box_image {
             /* flex:1; */
-            height:300px;
+            height:200px;
         }
         .box_input {
             flex: 1;
@@ -93,18 +93,16 @@
             flex: 1;
             position: relative;
         }
+
         .box_input {
-            height: 100px;
-        }
-        .box_input {
-            height: 60px;
-            overflow: scroll;
+            overflow-y: scroll;
         }
 
         .box_footer {
             position: absolute;
             left: 0px;
             bottom: 0px;
+            width:100%
         }
     </style>
 </head>
@@ -112,13 +110,40 @@
 <body>
     <header>header</header>
     <div id="main">
-        <article>article
+        <article>
             <div class="box_header">box header</div>
-            <div class="box">box</div>
+            <div class="box">box display data</div>
+            <div class="box_image">box image</div>
             <div class="some_container">
-                <div class="box_display">box display</div>
                 <div class="box_input">box input
                     <div class="box_input_content">1</div>
+                    <div class="box_input_content">2</div>
+                    <div class="box_input_content">3</div>
+                    <div class="box_input_content">4</div>                    <div class="box_input_content">1</div>
+                    <div class="box_input_content">2</div>
+                    <div class="box_input_content">3</div>
+                    <div class="box_input_content">4</div>                    <div class="box_input_content">1</div>
+                    <div class="box_input_content">2</div>
+                    <div class="box_input_content">3</div>
+                    <div class="box_input_content">4</div>                    <div class="box_input_content">1</div>
+                    <div class="box_input_content">2</div>
+                    <div class="box_input_content">3</div>
+                    <div class="box_input_content">4</div>                    <div class="box_input_content">1</div>
+                    <div class="box_input_content">2</div>
+                    <div class="box_input_content">3</div>
+                    <div class="box_input_content">4</div>                    <div class="box_input_content">1</div>
+                    <div class="box_input_content">2</div>
+                    <div class="box_input_content">3</div>
+                    <div class="box_input_content">4</div>                    <div class="box_input_content">1</div>
+                    <div class="box_input_content">2</div>
+                    <div class="box_input_content">3</div>
+                    <div class="box_input_content">4</div>                    <div class="box_input_content">1</div>
+                    <div class="box_input_content">2</div>
+                    <div class="box_input_content">3</div>
+                    <div class="box_input_content">4</div>                    <div class="box_input_content">1</div>
+                    <div class="box_input_content">2</div>
+                    <div class="box_input_content">3</div>
+                    <div class="box_input_content">4</div>                    <div class="box_input_content">4</div>                    <div class="box_input_content">1</div>
                     <div class="box_input_content">2</div>
                     <div class="box_input_content">3</div>
                     <div class="box_input_content">4</div>
