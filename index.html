@@ -28,17 +28,17 @@
             text-align: center;
         }
 
-        #main {
+        main {
             display: flex;
             flex: 1;
         }
 
-        #main>nav {
+        main>nav {
             flex: 1 6 23%;
             order: 1;
         }
 
-        #main>article {
+        main>article {
             flex: 3 1 60%;
             order: 2;
             display: flex;
@@ -59,9 +59,9 @@
         }
 
         header,
-        #main>article,
-        #main>aside,
-        #main>nav,
+        main>article,
+        main>aside,
+        main>nav,
         footer,
         .box_header,
         .box,
@@ -72,18 +72,18 @@
             padding: .2em;
             margin: .1em;
         }
-        #main>aside {
+        main>aside {
             flex: 1 6 23%;
             order: 3;
             display: none;
         }
         .box {
             /* flex:1; */
-            height:200px;
+            /* height:200px; */
         }
         .box_image {
             /* flex:1; */
-            height:200px;
+            /* height:200px; */
         }
         .box_input {
             flex: 1;
@@ -91,12 +91,12 @@
 
         .some_container {
             flex: 1;
-            position: relative;
+            /* position: relative; */
             overflow-y:scroll;
         }
 
         .box_input {
-            overflow-y: scroll;
+            /* overflow-y: scroll; */
         }
 
         .box_footer {
@@ -110,7 +110,7 @@
 
 <body>
     <header>header</header>
-    <div id="main">
+    <main>
         <article>
             <div class="box_header">box header</div>
             <div class="box">box display data</div>
@@ -154,7 +154,7 @@
         </article>
         <nav>nav</nav>
         <aside>aside</aside>
-    </div>
+    </main>
     <footer>footer</footer>
 </body>
 
