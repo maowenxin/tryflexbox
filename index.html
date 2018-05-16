@@ -69,8 +69,8 @@
         .box_input,
         .box_footer {
             border: 1px solid #666;
-            padding: .2em;
-            margin: .1em;
+            /* padding: .2em;
+            margin: .1em; */
         }
         main>aside {
             flex: 1 6 23%;
@@ -79,17 +79,17 @@
         }
         .box {
             /* flex:1; */
-            /* height:200px; */
+            height:200px;
         }
         .box_image {
             /* flex:1; */
-            /* height:200px; */
+            height:200px;
         }
         .box_input {
             flex: 1 1 auto;
             /* display:flex; */
-            height:60vh;
-            /* overflow-y:scroll; */
+            /* height:calc(100% - 190px); */
+            overflow-y:scroll;
         }
 
         .some_container {
@@ -100,15 +100,7 @@
             /* position: relative; */
             /* overflow-y:scroll; */
         }
-        .input_content {
-            /* display: flex; */
-            overflow-y: scroll;
-            height: 200px;
-        }
-        .box_input {
-            
-            height:100%;
-        }
+
         .box_input_content {
             display:block;
         }
@@ -130,7 +122,7 @@
             <div class="box_image">box image</div>
             <div class="some_container">
                 <div class="box_input">box input
-                    <div class="input_content">
+
                     <div class="box_input_content">1</div>
                     <div class="box_input_content">2</div>
                     <div class="box_input_content">3</div>
@@ -161,8 +153,8 @@
                     <div class="box_input_content">4</div>                    <div class="box_input_content">4</div>                    <div class="box_input_content">1</div>
                     <div class="box_input_content">2</div>
                     <div class="box_input_content">3</div>
-                    <div class="box_input_content">4</div>
-                </div>
+                    <div class="box_input_content">9</div>
+
                 </div>
                 <div class="box_footer">box footer</div>
             </div>
