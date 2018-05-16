@@ -86,19 +86,32 @@
             /* height:200px; */
         }
         .box_input {
-            flex: 1;
+            flex: 1 1 auto;
+            /* display:flex; */
+            height:60vh;
+            /* overflow-y:scroll; */
         }
 
         .some_container {
-            flex: 1;
+            flex: 1 1 auto;
+            display:flex;
+            flex-direction: column;
+            
             /* position: relative; */
-            overflow-y:scroll;
+            /* overflow-y:scroll; */
         }
-
+        .input_content {
+            /* display: flex; */
+            overflow-y: scroll;
+            height: 200px;
+        }
         .box_input {
-            /* overflow-y: scroll; */
+            
+            height:100%;
         }
-
+        .box_input_content {
+            display:block;
+        }
         .box_footer {
             /* position: absolute;
             left: 0px;
@@ -117,6 +130,7 @@
             <div class="box_image">box image</div>
             <div class="some_container">
                 <div class="box_input">box input
+                    <div class="input_content">
                     <div class="box_input_content">1</div>
                     <div class="box_input_content">2</div>
                     <div class="box_input_content">3</div>
@@ -148,6 +162,7 @@
                     <div class="box_input_content">2</div>
                     <div class="box_input_content">3</div>
                     <div class="box_input_content">4</div>
+                </div>
                 </div>
                 <div class="box_footer">box footer</div>
             </div>
