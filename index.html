@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Site</title>
+    <script>
+            window.onload= function(event) { 
+                var box_input = document.querySelectorAll('.box_input')[0];
+                console.log("color=",window.getComputedStyle(box_input).getPropertyValue('color') )
+                var footer_height = document.querySelector('.box_footer').getBoundingClientRect().height;
+                console.log("footer_height",footer_height);
+            box_input.setAttribute('style', "margin-bottom:"+footer_height+"px") ;
+            console.log("margin botoom=",window.getComputedStyle(box_input).getPropertyValue('margin-bottom' ));
+        };
+        </script>
     <style>
         * {
             box-sizing: border-box;
@@ -74,16 +84,17 @@ margin:0;
         .box_image {
             height:200px;
         }
-        .box_input {
-            flex: 1 1 0;
-            overflow-y:auto;
-            margin-bottom:20px;
-        }
         .some_container {
             flex: 1 1 auto;
             display:flex;
             flex-direction: column;
 
+        }
+        .box_input {
+            flex: 1 1 0;
+            overflow-y:auto;
+            color:red;
+            /* margin-bottom:20px; */
         }
         .box_footer {
             position: absolute;
@@ -144,6 +155,7 @@ margin:0;
         <aside>aside</aside>
     </main>
     <footer>footer</footer>
+
 </body>
 
 </html>
